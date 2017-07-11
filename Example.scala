@@ -1,11 +1,11 @@
 package demo
 
 import scalajs.js
-import scala.scalajs.js.annotation.{JSExportTopLevel, JSExportAll}
+import scala.scalajs.js.annotation._
 
 @JSExportTopLevel("Example")
-@JSExportAll
-class Example {
+@ScalaJSDefined
+class Example extends js.Object {
 
   def receive(x: Any): Unit ={
     println(s"overload me please $x")
